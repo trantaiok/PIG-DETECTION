@@ -1,0 +1,26 @@
+<annotation>
+	<folder>image</folder>
+	<filename>heo511.jpg</filename>
+	<path>D:\NHAN_DIEN_HEO\NHANDIENHEO\image\heo511.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>100</width>
+		<height>100</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>heo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>42</xmin>
+			<ymin>27</ymin>
+			<xmax>70</xmax>
+			<ymax>77</ymax>
+		</bndbox>
+	</object>
+</annotation>

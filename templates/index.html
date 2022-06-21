@@ -1,0 +1,143 @@
+<html>
+	<head>
+		<title>DETECTO | OBJECT DETECTION</title>
+		<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?lang=xml&amp;skin=sunburst"></script>
+
+		<style>
+			
+			
+			
+			
+			<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">	
+			
+		</style>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+		<!--<link rel="icon" href="flutter-logo.png">-->
+	</head>
+	
+	<body style="margin:0px">
+		<div class = "title">
+			<p class = "para-title">DETECTO OBJECT<br> DETECTION</p>
+			<!--<img src = "title.png" alt = "title_image" style="float: right;padding:70px" />-->
+			
+		</div>
+		
+		<div>
+			
+			<div class = "content1">
+				<p >
+					Detecto is a Python package that allows you to build fully-functioning
+					computer vision and object detection models with just 5 lines of code.
+					Inference on still images and videos, transfer learning on custom datasets, and
+					serialization of models to files are just a few of Detecto’s features. Detecto is
+					also built on top of PyTorch, allowing an easy transfer of models between the
+					two libraries.
+				</p>
+			</div>
+		</div>
+		
+		
+		
+		<div class = "heading-title">
+			<p>
+				ABOUT THE PROJECT:
+			</p>
+		</div>
+		<div class = "heading-body">
+			<p>
+				USING THE DETECTO package detected the animals for 3 classes as tiger
+				elephant and panda Here the step begins with object collection
+			</p>
+			<p>
+				<span style = "color:red;font-size:30px">Note:</span> As the detecto is a package built on top of pytroch with TensorFlow took
+				lot of time for training as because of my laptop configuration was not that
+				much high as only I have chosen 3 class images for animal detection
+			</p>
+		</div>
+		
+		<div class = "heading-title">
+			STEP 1: OBJECT DATA SET COLLECTION
+		</div>
+		<div  class = "heading-body">
+			Here is the data set for the three animals I have collected as follows
+			Remember you should have atleast 75 images in each class
+		</div>
+		
+		<div  class = "heading-body">
+			Here by downloading the images 75 for each class as tiger elephant and pandas from google. I have used the download all images extension to download the bulk amount of images as the extensions shown below as
+		</div>
+		
+		<div class = "heading-body">
+			Save all the images in single folder and name it (for example: images)
+		</div>
+		
+		<br><br>
+		
+		<br><br>
+		<div class = "heading-title">
+			STEP 2: SELECTING AND LABELLING THE IMAGES
+		</div>
+		<div class = "heading-body">
+			The next step involves to read the image in the xml format for training it with some specific algorithm as the Software called Labellmg which is available open source to convert the images with respect to the xml file.
+		</div>
+		<br><br><br>
+		
+		<div class = "heading-body">
+			Here select the open dir to open the folder that the images have been downloaded as the data set
+		</div><br>
+		<br>
+		
+		<div class = "heading-body">
+			Now click the Create Read box option to draw a box where the animal is exactly on and classify them it prompts to save the xml file to be saves click save to proceed further
+		</div><br>
+		<br>
+		
+		<div class = "heading-body">
+			Click save to proceed and repeat it for all images the xml file will be saved on the images folder one by one in order
+		</div><br>
+		<br>
+		
+		<div class = "heading-body">
+			NOTE: You can also classify the images from the single picture itself (for example – a single picture can consists of tiger, elephant and panda can be classified)
+		</div><br>
+		<br>
+		<div class = "heading-body">
+			The created Xml file stored with next to respective location where images found
+		</div><br>
+		
+		<div class = "heading-body">
+			The xml file consists of image details as its height, weightage, depth position placed etc. as below
+		</div><br>
+		
+		<div class = "heading-title">
+			STEP 3 : SETUP DETECTO WITH PYTHON AND WORKING
+		</div>
+		<div class = "heading-body">
+			I am using anaconda for this as it follows to install do pip in Anaconda prompt to install Detecto package (or) You can also use Google colab for this if you have no GPU in your computer specified as the pytorch needs gpu to process the images 
+		</div><br>
+		<br>
+		
+		<div class = "heading-body">
+			Now all is set let’s work on jupyter notebook further<BR>
+			Open the ipynb file where you have saved the images folder<br>
+			First import the detecto package then save the images (the image dataset with xml files) to the variable Give the class to be in the images to be detected and finally train the model. It will take some time to train the model 
+ 
+		</div><br>
+		<br>
+		
+		<div class = "heading-body">
+			Now testing the model with a image<br>
+			Here is the image Which is not used in training the images with tiger and elephant now can see whether it predicts correctly.
+		</div><br>
+		
+			This is following code to detect the image 
+		</div><br>
+		
+			Saving the model as the file and using later can be done it will help you when reuse of the object detection whenever is possible
+		</div><br>
+		<center><img src = "{{url_for('static', filename='20.jpg')}}" style ="width:70%;margin-top:20px;margin-bottom:20px"/></center><br><br>
+		<div class = "heading-body">
+			The first command saves the model as the pth file in your local system The second command is used when it is reused again for the use.
+		</div><br>
+	</body>
+</html>
